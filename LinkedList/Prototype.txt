@@ -1,0 +1,230 @@
+// http://cpp.sh/ is online c++ compiler
+
+
+// Example program
+#include <iostream>
+#include <string>
+
+struct node
+{
+    int data;
+    node *next;
+};
+
+int main()
+{
+    node *root = new node;
+    node *a = new node;
+    root->data=10;
+    a->data=5;
+    root->next=a;
+    
+    std::cout<<"root: "<<root->data<<std::endl;
+    std::cout<<"a: "<<a->data<<std::endl;
+}
+
+
+
+
+
+/***************************** It works(v.01) **********************************/
+
+// Example program
+#include <iostream>
+#include <string>
+
+struct node
+{
+    int data;
+    node *next;
+};
+
+int main()
+{
+    node *root = new node;
+    node *a = new node;
+    root->data=10;
+    a->data=5;
+    root->next=a;
+    a->next=NULL;
+    
+    node *temp = new node; 
+    temp=root;
+    
+    while(temp!=NULL)
+    {
+        std::cout<<"Data: "<<temp->data<<std::endl;
+        temp=temp->next;
+    }
+}
+
+
+/***************************** It works(v.02) **********************************/
+
+// Example program
+#include <iostream>
+#include <string>
+
+struct node
+{
+    int data;
+    node *next;
+};//end struct node
+
+void print_linkedlist(node *linked_list)
+{
+    node *temp = new node; 
+    temp=linked_list;
+    
+    while(temp!=NULL)
+    {
+        std::cout<<"Data: "<<temp->data<<std::endl;
+        temp=temp->next;
+    }
+}//end print
+
+int main()
+{
+    node *root = new node;
+    node *a = new node;
+    root->data=10;
+    a->data=5;
+    root->next=a;
+    a->next=NULL;
+    
+    print_linkedlist(root);
+}//end main
+
+
+/***************************** It works(v.03) **********************************/
+
+
+// Example program
+#include <iostream>
+#include <string>
+
+struct node
+{
+    int data;
+    node *next;
+};//end struct node
+
+void print_linkedlist(node *linked_list)
+{
+    while(linked_list!=NULL)
+    {
+        std::cout<<"Data: "<<linked_list->data<<std::endl;
+        linked_list=linked_list->next;
+    }
+}//end print
+
+void insertion_linkedlist(node *linked_list,int value)
+{       
+    node *temp = new node;
+    
+    while(linked_list->next!=NULL)
+    {
+        linked_list=linked_list->next;
+    }//end while
+
+    temp->data=value;
+    temp->next=NULL;
+    linked_list->next=temp;
+}//end insertion_linkedlist
+
+
+int main()
+{
+    node *root = new node;
+    node *a = new node;
+    root->data=10;
+    a->data=5;
+    root->next=a;
+    a->next=NULL;
+    
+    print_linkedlist(root);
+    insertion_linkedlist(root,22);
+    
+    print_linkedlist(root);
+    
+}//end main
+
+
+/***************************** It works(v.04) **********************************/
+
+// Example program
+#include <iostream>
+#include <string>
+
+struct node
+{
+    int data;
+    node *next;
+};//end struct node
+
+void print_linkedlist(node *linked_list)
+{
+    while(linked_list!=NULL)
+    {
+        std::cout<<"Data: "<<linked_list->data<<std::endl;
+        linked_list=linked_list->next;
+    }
+}//end print
+
+void insertion_linkedlist(node *linked_list,int value)
+{       
+    node *temp = new node;
+    
+    while(linked_list->next!=NULL)
+    {
+        linked_list=linked_list->next;
+    }//end while
+
+    temp->data=value;
+    temp->next=NULL;
+    linked_list->next=temp;
+}//end insertion_linkedlist
+
+void delete_linkedlist(node *linked_list,int value)
+{       
+    while(linked_list->next!=NULL)
+    {
+        if((linked_list->next)->data==value)
+        {
+            linked_list->next=(linked_list->next)->next;
+        }
+        linked_list=linked_list->next;
+    }//end while
+}//end insertion_linkedlist
+
+
+int main()
+{
+    node *root = new node;
+    node *a = new node;
+    root->data=10;
+    a->data=5;
+    root->next=a;
+    a->next=NULL;
+    
+    std::cout<<" "<<std::endl;
+    std::cout<<"print_linkedlist: "<<std::endl;
+    print_linkedlist(root);
+    
+    std::cout<<" "<<std::endl;
+    std::cout<<"insertion_linkedlist(root,22): "<<std::endl;
+    insertion_linkedlist(root,22);
+    
+    std::cout<<" "<<std::endl;
+    std::cout<<"print_linkedlist: "<<std::endl;
+    print_linkedlist(root);
+    
+    std::cout<<" "<<std::endl;
+    std::cout<<"delete_linkedlist(root,5): "<<std::endl;
+    delete_linkedlist(root,5);
+    
+    std::cout<<"print_linkedlist: "<<std::endl;
+    print_linkedlist(root);
+}//end main
+
+/***************************** It works(v.05) **********************************/
