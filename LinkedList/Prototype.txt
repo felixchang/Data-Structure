@@ -1,5 +1,10 @@
-// http://cpp.sh/ is online c++ compiler
-
+/****************************************
+* Author: Felix				*
+* Date: 24 Oct 2016			*
+* Linked List				*
+* Version: 0.1				*
+* Uses http://cpp.sh/ to compiler	*
+*****************************************/
 
 // Example program
 #include <iostream>
@@ -29,7 +34,14 @@ int main()
 
 /***************************** It works(v.01) **********************************/
 
-// Example program
+/****************************************
+* Author: Felix				*
+* Date: 24 Oct 2016			*
+* Linked List				*
+* Version: 0.2				*
+* Uses http://cpp.sh/ to compiler	*
+*****************************************/
+
 #include <iostream>
 #include <string>
 
@@ -61,7 +73,14 @@ int main()
 
 /***************************** It works(v.02) **********************************/
 
-// Example program
+/****************************************
+* Author: Felix				*
+* Date: 24 Oct 2016			*
+* Linked List				*
+* Version: 0.3				*
+* Uses http://cpp.sh/ to compiler	*
+*****************************************/
+
 #include <iostream>
 #include <string>
 
@@ -98,8 +117,14 @@ int main()
 
 /***************************** It works(v.03) **********************************/
 
+/****************************************
+* Author: Felix				*
+* Date: 24 Oct 2016			*
+* Linked List				*
+* Version: 0.4				*
+* Uses http://cpp.sh/ to compiler	*
+*****************************************/
 
-// Example program
 #include <iostream>
 #include <string>
 
@@ -152,7 +177,14 @@ int main()
 
 /***************************** It works(v.04) **********************************/
 
-// Example program
+/****************************************
+* Author: Felix				*
+* Date: 24 Oct 2016			*
+* Linked List				*
+* Version: 0.5				*
+* Uses http://cpp.sh/ to compiler	*
+*****************************************/
+
 #include <iostream>
 #include <string>
 
